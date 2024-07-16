@@ -1,7 +1,7 @@
 provider "aws" {
   region = "us-west-2"
-  access_key = "AKIAXYKJQFMVILNW2R7X"
-  secret_key = "secret_key"
+  access_key = "access_key"
+  secret_key = "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"
 }
 
 resource "aws_security_group" "allow_ssh" {
