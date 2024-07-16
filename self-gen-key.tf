@@ -1,3 +1,7 @@
+# env-variable.tf
+# existing-sg.tf
+# ssh-keygen -f localkey
+
 resource "aws_key_pair" "userkey" {
   key_name   = "localkey.pub"
   public_key = "ssh-rsa AAAA..."
