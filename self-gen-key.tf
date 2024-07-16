@@ -3,8 +3,8 @@
 # ssh-keygen -f localkey
 
 resource "aws_key_pair" "userkey" {
-  key_name   = "localkey.pub"
-  public_key = "ssh-rsa AAAA..."
+  key_name   = "localkey"
+  public_key = "ssh-rsa AAAAB3NzaC1..."
 }
 data "aws_security_group" "existing_sg" {
   id = "sg-0f96dc98ca1f813c5"
