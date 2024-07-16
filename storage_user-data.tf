@@ -1,6 +1,4 @@
-# export AWS_ACCESS_KEY_ID="access_key"
-# export AWS_SECRET_ACCESS_KEY="secret_key"
-# export AWS_REGION="region_code"
+# env-variable.tf
 
 resource "aws_security_group" "allow_ssh_http" {
   name        = "allow_ssh_http"
