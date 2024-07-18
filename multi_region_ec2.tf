@@ -1,10 +1,14 @@
+# export AWS_ACCESS_KEY_ID="access_key"
+# export AWS_SECRET_ACCESS_KEY="secret_key"
+
 provider "aws" {
-  region = "ap-southeast-1"
   alias  = "singapore"
+  region = "ap-southeast-1"
 }
+
 provider "aws" {
-  region = "ap-southeast-2"
   alias  = "sydney"
+  region = "ap-southeast-2"
 }
 
 resource "aws_instance" "first-instance" {
@@ -15,6 +19,7 @@ resource "aws_instance" "first-instance" {
     Name = "singapore-ec2"
   }
 }
+
 resource "aws_instance" "second-instance" {
   ami           = "ami-030a5acd7c996ef60"
   instance_type = "t2.micro"
